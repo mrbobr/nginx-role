@@ -15,7 +15,6 @@ nginx_config_dest: "/etc/nginx/nginx.conf"
 
 Example Playbook
 ----------------
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
     - name: Install my_nginx
       hosts: nginx servers

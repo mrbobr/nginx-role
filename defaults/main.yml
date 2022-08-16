@@ -1,4 +1,2 @@
 ---
 # defaults file for nginx-role
-nginx_user: root
-nginx_config_dest: "/etc/nginx/nginx.conf"

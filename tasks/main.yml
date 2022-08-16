@@ -14,15 +14,3 @@
     name: nginx
     state: present
   notify: start nginx
-- name: Flush handlers
-  meta: flush_handlers
-- name: Config nginx
-  tags: nginx
-  become: true
-  ansible.builtin.template:
-    src: "{{ nginx_config_template }}"
-    dest: "{{ nginx_config_dest }}"
-    mode: 0644
-  notify: restart nginx
-- name: Flush handlers
-  meta: flush_handlers
